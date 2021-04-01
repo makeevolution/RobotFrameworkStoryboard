@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="root">
+	<item key="pref.editor_zoom" value="0.75"/>
+	<item key="sbio.is_remote" value="false"/>
+	<item key="sbio.local" value="application"/>
+</section>

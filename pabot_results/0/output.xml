@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0 (Python 3.8.8 on win32)" generated="20210401 11:08:02.995" rpa="false" schemaversion="2">
+<suite id="s1" name="Webinar" source="C:\Users\aldo-\storyboard_workspace\webinar">
+<suite id="s1-s1" name="Test" source="C:\Users\aldo-\storyboard_workspace\webinar\test">
+<suite id="s1-s1-s1" name="Listen" source="C:\Users\aldo-\storyboard_workspace\webinar\test\listen.robot">
+<test id="s1-s1-s1-t1" name="Listen to event">
+<kw name="Listen To Events" library="lua_listener_PYTHON_wrapper">
+<var>${output}</var>
+<msg timestamp="20210401 11:08:03.064" level="FAIL">CalledProcessError: Command '['sblua', '-l', 'lua_listener_aldo', '-e', 'listener()']' returned non-zero exit status 1.</msg>
+<status status="FAIL" starttime="20210401 11:08:03.032" endtime="20210401 11:08:03.064"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${desire}</var>
+<arg>buttonpressed</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20210401 11:08:03.065" endtime="20210401 11:08:03.065"/>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<arg>${output}</arg>
+<arg>${desire}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="NOT RUN" starttime="20210401 11:08:03.065" endtime="20210401 11:08:03.065"/>
+</kw>
+<doc>Listen to a particular event from the Storyboard. This event is defined in the Lua function.</doc>
+<tag>button</tag>
+<status status="FAIL" starttime="20210401 11:08:03.031" endtime="20210401 11:08:03.065">CalledProcessError: Command '['sblua', '-l', 'lua_listener_aldo', '-e', 'listener()']' returned non-zero exit status 1.</status>
+</test>
+<status status="FAIL" starttime="20210401 11:08:03.016" endtime="20210401 11:08:03.065"/>
+</suite>
+<status status="FAIL" starttime="20210401 11:08:03.014" endtime="20210401 11:08:03.066"/>
+</suite>
+<status status="FAIL" starttime="20210401 11:08:02.997" endtime="20210401 11:08:03.067"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">button</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Webinar">Webinar</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Test">Webinar.Test</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="Listen">Webinar.Test.Listen</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

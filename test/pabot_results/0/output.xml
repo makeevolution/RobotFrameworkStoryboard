@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0 (Python 3.8.8 on win32)" generated="20210401 11:50:01.782" rpa="false" schemaversion="2">
+<suite id="s1" name="Test" source="C:\Users\aldo-\storyboard_workspace\webinar\test">
+<suite id="s1-s1" name="Listen" source="C:\Users\aldo-\storyboard_workspace\webinar\test\listen.robot">
+<test id="s1-s1-t1" name="Listen to event">
+<kw name="Listen To Events" library="lua_listener_PYTHON_wrapper">
+<var>${output}</var>
+<msg timestamp="20210401 11:50:01.902" level="INFO">${output} = buttonpressed
+</msg>
+<status status="PASS" starttime="20210401 11:50:01.818" endtime="20210401 11:50:01.902"/>
+</kw>
+<kw name="Convert To String" library="BuiltIn">
+<var>${output}</var>
+<arg>${output}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<msg timestamp="20210401 11:50:01.902" level="INFO">${output} = buttonpressed
+</msg>
+<status status="PASS" starttime="20210401 11:50:01.902" endtime="20210401 11:50:01.902"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${desire}</var>
+<arg>buttonpressed</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20210401 11:50:01.903" level="INFO">${desire} = buttonpressed</msg>
+<status status="PASS" starttime="20210401 11:50:01.902" endtime="20210401 11:50:01.903"/>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<arg>${output}</arg>
+<arg>${desire}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" starttime="20210401 11:50:01.903" endtime="20210401 11:50:01.903"/>
+</kw>
+<doc>Listen to a particular event from the Storyboard. This event is defined in the Lua function.</doc>
+<tag>button</tag>
+<status status="PASS" starttime="20210401 11:50:01.818" endtime="20210401 11:50:01.903"/>
+</test>
+<status status="PASS" starttime="20210401 11:50:01.802" endtime="20210401 11:50:01.903"/>
+</suite>
+<status status="PASS" starttime="20210401 11:50:01.784" endtime="20210401 11:50:01.904"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">button</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test">Test</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Listen">Test.Listen</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

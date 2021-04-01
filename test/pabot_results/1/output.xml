@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0 (Python 3.8.8 on win32)" generated="20210401 11:50:01.791" rpa="false" schemaversion="2">
+<suite id="s1" name="Test" source="C:\Users\aldo-\storyboard_workspace\webinar\test">
+<suite id="s1-s1" name="Press Button" source="C:\Users\aldo-\storyboard_workspace\webinar\test\press_button.robot">
+<test id="s1-s1-t1" name="Press Button">
+<kw name="Press Middle Button" library="lua_writer_PYTHON_wrapper">
+<var>${output}</var>
+<msg timestamp="20210401 11:50:02.034" level="INFO">${output} = None</msg>
+<status status="PASS" starttime="20210401 11:50:01.819" endtime="20210401 11:50:02.034"/>
+</kw>
+<doc>Simply press the middle</doc>
+<tag>button</tag>
+<status status="PASS" starttime="20210401 11:50:01.819" endtime="20210401 11:50:02.034"/>
+</test>
+<status status="PASS" starttime="20210401 11:50:01.808" endtime="20210401 11:50:02.035"/>
+</suite>
+<status status="PASS" starttime="20210401 11:50:01.791" endtime="20210401 11:50:02.036"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">button</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test">Test</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Press Button">Test.Press Button</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

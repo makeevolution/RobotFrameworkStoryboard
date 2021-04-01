@@ -1,0 +1,2 @@
+66,gre.press,,4u1:button 1 4u1:timestamp 3453 2u1:subtype 0 2s1:x 416 2s1:y 245 2s1:z 0 2s1:id 0 2s1:spare 0 
+134,gre.release,,4u1:button 0 4u1:timestamp 3587 2u1:subtype 0 2s1:x 416 2s1:y 245 2s1:z 0 2s1:id 0 2s1:spare 0 

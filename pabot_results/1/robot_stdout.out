@@ -1,0 +1,20 @@
+==============================================================================
+Webinar                                                                       
+==============================================================================
+Webinar.Test                                                                  
+==============================================================================
+Webinar.Test.Press Button                                                     
+==============================================================================
+Press Button :: Simply press the middle                               | FAIL |
+CalledProcessError: Command '['sblua', 'lua_do_stuff_aldo.lua']' returned non-zero exit status 1.
+------------------------------------------------------------------------------
+Webinar.Test.Press Button                                             | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Webinar.Test                                                          | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Webinar                                                               | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\aldo-\storyboard_workspace\webinar\pabot_results\1\output.xml

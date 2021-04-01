@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<eventdefinitions>
+  <event format="1s0 screen_name" name="test_driver_goto_screen" type="0x40">
+    <field name="screen_name"/>
+  </event>
+  <event format="1s0 screen_name" name="test_driver_set_next_screen" type="0x40">
+    <field name="screen_name"/>
+  </event>
+</eventdefinitions>

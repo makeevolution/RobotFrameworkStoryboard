@@ -1,0 +1,20 @@
+==============================================================================
+Webinar                                                                       
+==============================================================================
+Webinar.Test                                                                  
+==============================================================================
+Webinar.Test.Listen                                                           
+==============================================================================
+Listen to event :: Listen to a particular event from the Storyboar... | FAIL |
+CalledProcessError: Command '['sblua', '-l', 'lua_listener_aldo', '-e', 'listener()']' returned non-zero exit status 1.
+------------------------------------------------------------------------------
+Webinar.Test.Listen                                                   | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Webinar.Test                                                          | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Webinar                                                               | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\aldo-\storyboard_workspace\webinar\pabot_results\0\output.xml
