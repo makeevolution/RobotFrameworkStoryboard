@@ -56,17 +56,20 @@ local function msdelay(ms)
 end
 
 
-local filename = "C:\\Users\\aldo-\\storyboard_workspace\\webinar\\event_capture2.txt"
-local channel = "LuaModulesTest"
+--local filename = "C:\\Users\\aldo-\\storyboard_workspace\\webinar\\event_capture2.txt"
+--local channel = "LuaModulesTest"
 --print("Loading", filename)
-for line in io.lines(filename) do
-    local delay, ev, data, fmt = parse_playback_line(line)
+--for line in io.lines(filename) do
+--    local delay, ev, data, fmt = parse_playback_line(line)
     --print(type(ev))
-    msdelay(delay)
+--    msdelay(delay)
     --print("Sending ", delay, ev, fmt)
-    print(ev, fmt, data, channel)
-    gre.send_event_data(ev, fmt, data, channel)
-end
+--    print(ev, fmt, data, channel)
+--    gre.send_event_data(ev, fmt, data, channel)
+--end
+
+local channel = "LuaModulesTest"
+gre.send_event_target("gre.press", "mainLayer.button_test", channel)
 
 
 

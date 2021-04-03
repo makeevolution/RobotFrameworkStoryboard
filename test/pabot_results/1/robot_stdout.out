@@ -1,14 +1,17 @@
 ==============================================================================
 Test                                                                          
 ==============================================================================
-Test.Press Button                                                             
+Test.Listen                                                                   
 ==============================================================================
-Press Button :: Simply press the middle                               | PASS |
+Listen to button press                                                | FAIL |
+Variable '${output}' not found. Did you mean:
+    ${OUTPUT_DIR}
+    ${OUTPUT_FILE}
 ------------------------------------------------------------------------------
-Test.Press Button                                                     | PASS |
-1 test, 1 passed, 0 failed
+Test.Listen                                                           | FAIL |
+1 test, 0 passed, 1 failed
 ==============================================================================
-Test                                                                  | PASS |
-1 test, 1 passed, 0 failed
+Test                                                                  | FAIL |
+1 test, 0 passed, 1 failed
 ==============================================================================
 Output:  C:\Users\aldo-\storyboard_workspace\webinar\test\pabot_results\1\output.xml

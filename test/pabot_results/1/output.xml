@@ -1,31 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.0 (Python 3.8.8 on win32)" generated="20210401 11:50:01.791" rpa="false" schemaversion="2">
+<robot generator="Robot 4.0 (Python 3.8.8 on win32)" generated="20210401 12:28:00.817" rpa="false" schemaversion="2">
 <suite id="s1" name="Test" source="C:\Users\aldo-\storyboard_workspace\webinar\test">
-<suite id="s1-s1" name="Press Button" source="C:\Users\aldo-\storyboard_workspace\webinar\test\press_button.robot">
-<test id="s1-s1-t1" name="Press Button">
-<kw name="Press Middle Button" library="lua_writer_PYTHON_wrapper">
+<suite id="s1-s1" name="Listen" source="C:\Users\aldo-\storyboard_workspace\webinar\test\listen.robot">
+<test id="s1-s1-t1" name="Listen to button press">
+<kw name="Given A button is pressed">
+<kw name="Listen To Events" library="lua_listener_PYTHON_wrapper">
 <var>${output}</var>
-<msg timestamp="20210401 11:50:02.034" level="INFO">${output} = None</msg>
-<status status="PASS" starttime="20210401 11:50:01.819" endtime="20210401 11:50:02.034"/>
+<msg timestamp="20210401 12:28:00.916" level="INFO">${output} = buttonpressed
+</msg>
+<status status="PASS" starttime="20210401 12:28:00.849" endtime="20210401 12:28:00.916"/>
 </kw>
-<doc>Simply press the middle</doc>
+<kw name="Convert To String" library="BuiltIn">
+<var>${output}</var>
+<arg>${output}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<msg timestamp="20210401 12:28:00.916" level="INFO">${output} = buttonpressed
+</msg>
+<status status="PASS" starttime="20210401 12:28:00.916" endtime="20210401 12:28:00.916"/>
+</kw>
+<status status="PASS" starttime="20210401 12:28:00.849" endtime="20210401 12:28:00.916"/>
+</kw>
+<kw name="Then Text should change to buttonpressed">
+<kw name="Set Variable" library="BuiltIn">
+<var>${desire}</var>
+<arg>buttonpressed</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20210401 12:28:00.917" level="INFO">${desire} = buttonpressed</msg>
+<status status="PASS" starttime="20210401 12:28:00.917" endtime="20210401 12:28:00.917"/>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<arg>${output}</arg>
+<arg>${desire}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<msg timestamp="20210401 12:28:00.917" level="FAIL">Variable '${output}' not found. Did you mean:
+    ${OUTPUT_DIR}
+    ${OUTPUT_FILE}</msg>
+<status status="FAIL" starttime="20210401 12:28:00.917" endtime="20210401 12:28:00.918"/>
+</kw>
+<status status="FAIL" starttime="20210401 12:28:00.916" endtime="20210401 12:28:00.918"/>
+</kw>
 <tag>button</tag>
-<status status="PASS" starttime="20210401 11:50:01.819" endtime="20210401 11:50:02.034"/>
+<status status="FAIL" starttime="20210401 12:28:00.849" endtime="20210401 12:28:00.918">Variable '${output}' not found. Did you mean:
+    ${OUTPUT_DIR}
+    ${OUTPUT_FILE}</status>
 </test>
-<status status="PASS" starttime="20210401 11:50:01.808" endtime="20210401 11:50:02.035"/>
+<status status="FAIL" starttime="20210401 12:28:00.834" endtime="20210401 12:28:00.918"/>
 </suite>
-<status status="PASS" starttime="20210401 11:50:01.791" endtime="20210401 11:50:02.036"/>
+<status status="FAIL" starttime="20210401 12:28:00.818" endtime="20210401 12:28:00.919"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0" skip="0">button</stat>
+<stat pass="0" fail="1" skip="0">button</stat>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Test">Test</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1" name="Press Button">Test.Press Button</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Test">Test</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Listen">Test.Listen</stat>
 </suite>
 </statistics>
 <errors>
