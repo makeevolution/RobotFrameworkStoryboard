@@ -62,3 +62,9 @@ function callbacks:CBHandleScreenHide(mapargs)
   collectgarbage("collect") --if you aren't using the gc option at engine level
   --print("Lua memory used:"..collectgarbage("count").."KB")
 end
+
+--- @param gre#context mapargs
+function CBGetContext( mapargs )
+    print("Triggered by event : " .. mapargs.context_event)
+    print("Event was targeting : " .. mapargs.active_context)
+end

@@ -68,9 +68,25 @@ end
 --    gre.send_event_data(ev, fmt, data, channel)
 --end
 
-local channel = "LuaModulesTest"
-gre.send_event_target("gre.press", "mainLayer.button_test", channel)
-
+function send_press(x, y)
+    channel = "Thermostat"
+    local  format = "4u1 button 4u1 timestamp 2u1 subtype 2s1 x 2s1 y 2s1 z 2s1 id 2s1 spare"
+    local data = {}
+    data["button"] = 0
+    data["timestamp"] = 0
+    data["subtype"] = 0
+    data["x"] = x
+    data["y"] = y
+    data["z"] = 0
+    data["id"] = 0
+    data["spare"] = 0
+    local success, error = gre.send_event_data("gre.press", format, data, channel)
+    if(success == false) then
+        print(error)
+        --handle error
+    end
+    local success, error = gre.send_event_data("gre.release", format, data, channel)
+end
 
 
 

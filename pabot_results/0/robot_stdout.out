@@ -3,12 +3,12 @@ Webinar
 ==============================================================================
 Webinar.Test                                                                  
 ==============================================================================
-Webinar.Test.Listen                                                           
+Webinar.Test.Press Button                                                     
 ==============================================================================
-Listen to event :: Listen to a particular event from the Storyboar... | FAIL |
-CalledProcessError: Command '['sblua', '-l', 'lua_listener_aldo', '-e', 'listener()']' returned non-zero exit status 1.
+Press Button :: Simply press the middle                               | FAIL |
+CalledProcessError: Command '['sblua', 'lua_do_stuff_aldo.lua']' returned non-zero exit status 1.
 ------------------------------------------------------------------------------
-Webinar.Test.Listen                                                   | FAIL |
+Webinar.Test.Press Button                                             | FAIL |
 1 test, 0 passed, 1 failed
 ==============================================================================
 Webinar.Test                                                          | FAIL |

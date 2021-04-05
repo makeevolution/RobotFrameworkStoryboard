@@ -1,0 +1,7 @@
+{
+    "thermostat_layer.temp_value.text": "68\u00b0",
+    "mapargs.context_screen": "home_sc",
+    "thermostat_layer.plus.grd_y": "100",
+    "thermostat_layer.temp_scale.text": "Fahrenheit",
+    "thermostat_layer.plus.grd_x": "599"
+}

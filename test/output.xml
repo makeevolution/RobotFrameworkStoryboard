@@ -1,37 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.0 (Python 3.8.8 on win32)" generated="20210403 00:06:18.215" rpa="false" schemaversion="2">
-<suite id="s1" name="Listen" source="C:\Users\aldo-\storyboard_workspace\webinar\test\listen.robot">
-<test id="s1-t1" name="Window 1">
-<kw name="The value of temperature Should Be 6°" sourcename="The value of ${key} Should Be ${value}">
-<kw name="Then the value of ${key} must equal ${value}" library="lua_listener_PYTHON_wrapper" sourcename="the value of ${key} must equal ${value}">
-<msg timestamp="20210403 00:06:25.531" level="FAIL">Temperature value is currently at 68°, not equal to desired value of 6°</msg>
-<status status="FAIL" starttime="20210403 00:06:25.530" endtime="20210403 00:06:25.531"/>
+<robot generator="Rebot 4.0 (Python 3.8.8 on win32)" generated="20210405 12:04:02.567" rpa="false" schemaversion="2">
+<suite id="s1" name="Test" source="C:\Users\aldo-\storyboard_workspace\webinar\test">
+<suite id="s1-s1" name="Listen" source="C:\Users\aldo-\storyboard_workspace\webinar\test\listen.robot">
+<test id="s1-s1-t1" name="Open home window and check if temperature and scale is at default value">
+<kw name="The value of temperature Should Be 68°">
+<kw name="the value of ${key} must equal ${value}" library="lua_listener_PYTHON_wrapper">
+<msg timestamp="20210405 12:03:55.580" level="INFO">Temperature value OK</msg>
+<status status="PASS" starttime="20210405 12:03:55.580" endtime="20210405 12:03:55.580"/>
 </kw>
-<status status="FAIL" starttime="20210403 00:06:25.529" endtime="20210403 00:06:25.531"/>
+<status status="PASS" starttime="20210405 12:03:55.580" endtime="20210405 12:03:55.580"/>
 </kw>
-<kw name="The value of scale Should Be Fahreneit" sourcename="The value of ${key} Should Be ${value}">
-<kw name="Then the value of ${key} must equal ${value}" library="lua_listener_PYTHON_wrapper" sourcename="the value of ${key} must equal ${value}">
-<msg timestamp="20210403 00:06:25.532" level="FAIL">Scale is currently Fahrenheit, not equal to desired scale of Fahreneit</msg>
-<status status="FAIL" starttime="20210403 00:06:25.532" endtime="20210403 00:06:25.532"/>
+<kw name="The value of scale Should Be Fahrenheit">
+<kw name="the value of ${key} must equal ${value}" library="lua_listener_PYTHON_wrapper">
+<msg timestamp="20210405 12:03:55.581" level="INFO">Scale value OK</msg>
+<status status="PASS" starttime="20210405 12:03:55.581" endtime="20210405 12:03:55.581"/>
 </kw>
-<status status="FAIL" starttime="20210403 00:06:25.532" endtime="20210403 00:06:25.533"/>
+<status status="PASS" starttime="20210405 12:03:55.580" endtime="20210405 12:03:55.581"/>
 </kw>
-<status status="FAIL" starttime="20210403 00:06:25.529" endtime="20210403 00:06:25.533">Several failures occurred:
-
-1) Temperature value is currently at 68°, not equal to desired value of 6°
-
-2) Scale is currently Fahrenheit, not equal to desired scale of Fahreneit</status>
+<tag>RobotTest</tag>
+<status status="PASS" starttime="20210405 12:03:55.579" endtime="20210405 12:03:55.581"/>
 </test>
-<status status="FAIL" starttime="20210403 00:06:18.217" endtime="20210403 00:06:25.535"/>
+<status status="PASS" starttime="20210405 12:03:53.225" endtime="20210405 12:03:55.581"/>
+</suite>
+<suite id="s1-s2" name="Execute" source="C:\Users\aldo-\storyboard_workspace\webinar\test\execute.robot">
+<test id="s1-s2-t1" name="Scenario: Increase Temperature Value by 1 from default">
+<kw name="Given The home window is open with default values">
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210405 12:03:58.246" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210405 12:03:53.243" endtime="20210405 12:03:58.246"/>
+</kw>
+<status status="PASS" starttime="20210405 12:03:53.243" endtime="20210405 12:03:58.246"/>
+</kw>
+<kw name="When I press the plus button once">
+<kw name="press plus button once" library="lua_writer_PYTHON_wrapper">
+<msg timestamp="20210405 12:04:00.261" level="INFO">CompletedProcess(args=['sblua', '-l', 'lua_listener_aldo', '-e', 'listener()'], returncode=0, stdout=b'{"thermostat_layer.temp_value.text":69\xc2\xb0,"mapargs.context_screen":home_sc,"thermostat_layer.plus.grd_y":100,"thermostat_layer.temp_scale.text":Fahrenheit,"thermostat_layer.plus.grd_x":599,"No of data for Robot Framework testing":5}\r\n', stderr=b'')</msg>
+<status status="PASS" starttime="20210405 12:03:58.247" endtime="20210405 12:04:00.261"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210405 12:04:02.263" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210405 12:04:00.261" endtime="20210405 12:04:02.263"/>
+</kw>
+<status status="PASS" starttime="20210405 12:03:58.246" endtime="20210405 12:04:02.263"/>
+</kw>
+<kw name="Then Temperature should increase by 1 from default">
+<kw name="Set Variable" library="BuiltIn">
+<var>${window}</var>
+<arg>home_sc</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20210405 12:04:02.263" level="INFO">${window} = home_sc</msg>
+<status status="PASS" starttime="20210405 12:04:02.263" endtime="20210405 12:04:02.263"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${type string}</var>
+<arg>type($window)</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20210405 12:04:02.266" level="INFO">${type string} = &lt;class 'str'&gt;</msg>
+<status status="PASS" starttime="20210405 12:04:02.263" endtime="20210405 12:04:02.266"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${type string}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210405 12:04:02.266" endtime="20210405 12:04:02.266"/>
+</kw>
+<kw name="check if temperature in window ${window} increases by 1 from default" library="lua_writer_PYTHON_wrapper">
+<status status="PASS" starttime="20210405 12:04:02.267" endtime="20210405 12:04:02.269"/>
+</kw>
+<status status="PASS" starttime="20210405 12:04:02.263" endtime="20210405 12:04:02.269"/>
+</kw>
+<tag>RobotTest</tag>
+<status status="PASS" starttime="20210405 12:03:53.243" endtime="20210405 12:04:02.269"/>
+</test>
+<status status="PASS" starttime="20210405 12:03:53.224" endtime="20210405 12:04:02.270"/>
+</suite>
+<doc>[https://pabot.org/?ref=log|Pabot] result from 2 executions.</doc>
+<status status="PASS" starttime="20210405 12:03:53.207" endtime="20210405 12:04:02.270"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
+<stat pass="2" fail="0" skip="0">RobotTest</stat>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Listen">Listen</stat>
+<stat pass="2" fail="0" skip="0" id="s1" name="Test">Test</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Listen">Test.Listen</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s2" name="Execute">Test.Execute</stat>
 </suite>
 </statistics>
 <errors>

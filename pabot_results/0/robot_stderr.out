@@ -1,10 +1,1 @@
-sblua: module 'lua_listener_aldo' not found:
-	no field package.preload['lua_listener_aldo']
-	no file '.\lua_listener_aldo.lua'
-	no file 'C:\Program Files\Crank_Software\Storyboard_Engine\7.0.202102180533.39538\win32-x86-swrender-obj\bin\lua\lua_listener_aldo.lua'
-	no file 'C:\Program Files\Crank_Software\Storyboard_Engine\7.0.202102180533.39538\win32-x86-swrender-obj\bin\lua\lua_listener_aldo\init.lua'
-	no file 'C:\Program Files\Crank_Software\Storyboard_Engine\7.0.202102180533.39538\win32-x86-swrender-obj\bin\lua_listener_aldo.lua'
-	no file 'C:\Program Files\Crank_Software\Storyboard_Engine\7.0.202102180533.39538\win32-x86-swrender-obj\bin\lua_listener_aldo\init.lua'
-	no file '.\lua_listener_aldo.dll'
-	no file 'C:\Program Files\Crank_Software\Storyboard_Engine\7.0.202102180533.39538\win32-x86-swrender-obj\bin\lua_listener_aldo.dll'
-	no file 'C:\Program Files\Crank_Software\Storyboard_Engine\7.0.202102180533.39538\win32-x86-swrender-obj\bin\loadall.dll'
+sblua: cannot open lua_do_stuff_aldo.lua: No such file or directory

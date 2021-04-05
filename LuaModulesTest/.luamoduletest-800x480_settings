@@ -3,4 +3,5 @@
 	<item key="pref.editor_zoom" value="1.0"/>
 	<item key="sbio.is_remote" value="false"/>
 	<item key="sbio.local" value="LuaModulesTest"/>
+	<item key="pref.default_control_name" value="Control"/>
 </section>
