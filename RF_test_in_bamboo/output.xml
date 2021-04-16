@@ -1,24 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.0 (Python 3.8.6 on linux)" generated="20210416 14:52:47.036" rpa="false" schemaversion="2">
+<robot generator="Robot 4.0 (Python 3.8.6 on linux)" generated="20210416 17:17:15.302" rpa="false" schemaversion="2">
 <suite id="s1" name="Test Bamboo" source="/home/aldo/Documents/CrankStoryboardFirstTry/RobotFrameworkStoryboard/RF_test_in_bamboo/test_bamboo.robot">
 <test id="s1-t1" name="Check if string is correct">
-<kw name="The value of temperature Should Be temperature" sourcename="The value of ${key} Should Be ${value}">
+<kw name="The value of scale Should Be k" sourcename="The value of ${key} Should Be ${value}">
 <kw name="the value of ${key} must equal ${value}" library="python" sourcename="the value of ${key} must equal ${value}">
-<status status="PASS" starttime="20210416 14:52:47.068" endtime="20210416 14:52:47.069"/>
+<msg timestamp="20210416 17:17:15.335" level="INFO">scale</msg>
+<msg timestamp="20210416 17:17:15.335" level="FAIL">Error: scale is not equal to k</msg>
+<status status="FAIL" starttime="20210416 17:17:15.334" endtime="20210416 17:17:15.335"/>
 </kw>
-<status status="PASS" starttime="20210416 14:52:47.068" endtime="20210416 14:52:47.069"/>
-</kw>
-<kw name="The value of scale Should Be wrong" sourcename="The value of ${key} Should Be ${value}">
-<kw name="the value of ${key} must equal ${value}" library="python" sourcename="the value of ${key} must equal ${value}">
-<msg timestamp="20210416 14:52:47.070" level="FAIL">AssertionError</msg>
-<status status="FAIL" starttime="20210416 14:52:47.069" endtime="20210416 14:52:47.070"/>
-</kw>
-<status status="FAIL" starttime="20210416 14:52:47.069" endtime="20210416 14:52:47.070"/>
+<status status="FAIL" starttime="20210416 17:17:15.334" endtime="20210416 17:17:15.335"/>
 </kw>
 <tag>RobotTest</tag>
-<status status="FAIL" starttime="20210416 14:52:47.068" endtime="20210416 14:52:47.070">AssertionError</status>
+<status status="FAIL" starttime="20210416 17:17:15.333" endtime="20210416 17:17:15.335">Error: scale is not equal to k</status>
 </test>
-<status status="FAIL" starttime="20210416 14:52:47.037" endtime="20210416 14:52:47.071"/>
+<status status="FAIL" starttime="20210416 17:17:15.303" endtime="20210416 17:17:15.336"/>
 </suite>
 <statistics>
 <total>
