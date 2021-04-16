@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0 (Python 3.8.6 on linux)" generated="20210416 14:33:36.517" rpa="false" schemaversion="2">
+<suite id="s1" name="Test Bamboo" source="/home/aldo/Documents/CrankStoryboardFirstTry/RobotFrameworkStoryboard/RF_test_in_bamboo/test_bamboo.robot">
+<test id="s1-t1" name="Check if string is correct">
+<kw name="The value of temperature Should Be temperature" sourcename="The value of ${key} Should Be ${value}">
+<kw name="the value of ${key} must equal ${value}" library="python" sourcename="the value of ${key} must equal ${value}">
+<status status="PASS" starttime="20210416 14:33:36.550" endtime="20210416 14:33:36.550"/>
+</kw>
+<status status="PASS" starttime="20210416 14:33:36.549" endtime="20210416 14:33:36.550"/>
+</kw>
+<kw name="The value of scale Should Be scale" sourcename="The value of ${key} Should Be ${value}">
+<kw name="the value of ${key} must equal ${value}" library="python" sourcename="the value of ${key} must equal ${value}">
+<status status="PASS" starttime="20210416 14:33:36.551" endtime="20210416 14:33:36.551"/>
+</kw>
+<status status="PASS" starttime="20210416 14:33:36.550" endtime="20210416 14:33:36.551"/>
+</kw>
+<tag>RobotTest</tag>
+<status status="PASS" starttime="20210416 14:33:36.549" endtime="20210416 14:33:36.551"/>
+</test>
+<status status="PASS" starttime="20210416 14:33:36.518" endtime="20210416 14:33:36.552"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">RobotTest</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test Bamboo">Test Bamboo</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
