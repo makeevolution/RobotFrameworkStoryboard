@@ -6,5 +6,5 @@ class python(object): #class name must be the same as python name
         try:
             assert key==value
         except Exception as e:
-            e.args = e.args + "test fails, {} is not equal to {}".format(key,value)
+            e.args = "test fails, {} is not equal to {}".format(key,value)
 
