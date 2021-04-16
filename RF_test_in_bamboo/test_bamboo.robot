@@ -8,7 +8,7 @@ Check if string is correct
     [Tags]  RobotTest
     [Template]    The value of ${key} Should Be ${value}
     temperature   temperature
-    scale    scale
+    scale    wrong
 
 *** Keywords ***
 The value of ${key} Should Be ${value}
