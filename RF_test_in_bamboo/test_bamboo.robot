@@ -7,7 +7,7 @@ Library     String
 Check if string is correct
     [Tags]  RobotTest
     [Template]    The value of ${key} Should Be ${value}
-    hey hey   
+    hey  hey   
 
 *** Keywords ***
 The value of ${key} Should Be ${value}
